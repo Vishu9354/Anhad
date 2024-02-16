@@ -1,0 +1,51 @@
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 50px auto;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 2px;
+      background-color: #333;
+      margin-left: -1px;
+    }
+
+    .event {
+      position: relative;
+      margin-bottom: 50px;
+    }
+
+    .event::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 12px;
+      height: 12px;
+      background-color: #333;
+      border-radius: 50%;
+      margin-top: -6px;
+      left: -6px;
+    }
+
+    .event-date {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .event-content {
+      padding: 20px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      background-color: #fff;
+    }

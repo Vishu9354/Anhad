@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Musicly - Music Bands and Musicians HTML5 Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Place favicon.svg in the root directory -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.svg"
+    />
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/app/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/app/css/meanmenu.min.css" />
+    <link rel="stylesheet" href="assets/app/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/app/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/app/css/slick.css" />
+    <link rel="stylesheet" href="assets/app/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/app/css/backtotop.css" />
+    <link rel="stylesheet" href="assets/app/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/app/css/flaticon_musicly.css" />
+    <link rel="stylesheet" href="assets/app/css/fontawesome-pro.css" />
+    <link rel="stylesheet" href="assets/app/css/spacing.css" />
+    <link rel="stylesheet" href="assets/app/css/main.css" />
+  </head>
+
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <div class="mouseCursor cursor-outer"></div>
+    <div class="mouseCursor cursor-inner"><span>Drag</span></div>
+
+    <!-- Preloader start -->
+    <div id="preloader">
+      <div class="line-loader">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- Offcanvas area start -->
+    <div class="fix">
+      <div class="offcanvas__info">
+        <div class="offcanvas__wrapper">
+          <div class="offcanvas__content">
+            <div
+              class="offcanvas__top mb-40 d-flex justify-content-between align-items-center"
+            >
+              <div class="offcanvas__logo">
+                <a href="index.html">
+                  <img src="assets/img/logo/logo.svg" alt="logo" />
+                </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas__overlay"></div>
+    <div class="offcanvas__overlay-white"></div>
+    <!-- Offcanvas area start -->
+
+    <!-- Header area start -->
+    <header>
+      <div
+        id="header-sticky"
+        class="header__area header-1 ms-header-fixed ms-bg-body"
+      >
+        <div class="container-fluid ms-maw-1710">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="mega__menu-wrapper p-relative">
+                <div
+                  class="header__main ms-border2 d-flex align-items-center justify-content-between"
+                >
+                  <div class="header__logo pt-25 pb-25">
+                    <a href="index.html">
+                      <img
+                        src="#"
+                        alt="logo not found"
+                      />
+                    </a>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header area end -->
+
+    <div class="ms-all-content ms-content-mobile-space pt-125">
+      <main>
+        <!-- About Area Start Here  -->
+        <section class="ms-genres-area">
+          <div
+            class="ms-about-bg include__bg p-relative zindex-1 pt-130 pb-130"
+            data-background="assets/img/banner/banner1.png" style="overflow: hidden;"
+          >
+            <div class="ms-overlay ms-overlay5 p-absolute zindex--1"></div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-xxl-10">
+                  <div class="ms-about-content text-center" >
+                    <h2 class="ms-title2 white-text mb-30"style="margin-top: 250px;">
+                      Most popular genres
+                    </h2>
+                    <p class="capitalize mb-65">
+                      Our collection of award-winning Popular bands for hire
+                      perform floor-filling songs in all genres, that <br />
+                      everyone loves. But don't leave it too late – the best
+                      bands book up early!
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- About Area End Here  -->
+
+        <!-- Genres Listing Area Start  -->
+        <div class="ms-genres-listing pt-130 pb-110">
+          <!-- <div class="select"><select name="Event-select" id="select">
+            <option value="ALL">All</option>
+            <option value="Technical">Technical</option>
+            <option value="Cultural">Cultural</option>
+          </select></div> -->
+
+          <!-- <div class="filter" id="filter">
+            <button class="btn" onclick="filterSelection('all')">All</button>
+            <button class="btn" onclick="filterSelection('technical')">Technical</button>
+            <button class="btn" onclick="filterSelection('Cultural')">Cultural</button>
+          </div> -->
+          <div class="container">
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="home-tab-pane"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+                tabindex="0"
+              >
+                <div class="row" id="row">
+                  <div class="col-xl-6" class="Cultural" id="Cultural">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Cultural_event/promNight.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                        <!-- <span class="ms-genres-price">From $99</span> -->
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <!-- <span class="ms-genres-star"
+                          ><i class="fa-light fa-star"></i
+                        ></span> -->
+                        <h4 class="ms-genres-title">
+                          <a>Prom Night</a>
+                        </h4>
+                        <p class="mb-30">
+                          Outstanding wedding band playing chart, indie, rock
+                          anthems and Britpop and featuring guitars, keyboards.
+                        </p>
+                        <p><a href="https://unstop.com/events/prom-night-anhad24-iit-jammu-858767">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6" class="Cultural" id="Cultural">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Cultural_event/groupDance.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                       
+                        <!-- <span class="ms-genres-price">From $99</span> -->
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Groove troops</a>
+                        </h4>
+                        <p class="mb-30">
+                         Group Dance Competetion
+                        </p>
+                        <p><a href="https://unstop.com/events/groove-troops-anhad24-iit-jammu-891452">Register now</a> </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6" class="Cultural" id="Cultural">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Cultural_event/blindDate.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Blind Date</a>
+                        </h4>
+                        <p class="mb-30">
+                          Search Your other half
+                        </p>
+                        <p><a href="https://unstop.com/events/blind-date-boys-anhad24-iit-jammu-884638">Register Now(boys)</a></p>
+                        <p><a href="https://unstop.com/events/blind-date-girls-anhad24-iit-jammu-884659">Register Now(girls)</a></p>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="col-xl-6" class="Technical" id="Cultural">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Technical_event/Coder.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Mr. Coder and Ms. Coder</a>
+                        </h4>
+                        <p class="mb-30">
+                          Crown of code: where tech and royality converge.
+                        </p>
+                        <p><a href="https://unstop.com/hackathons/mr-miss-coder-anhad24-iit-jammu-868611">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6" class="Technical" id="Cultural">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Technical_event/spinoff.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Stellar Spin Off</a>
+                        </h4>
+                        <p class="mb-30">
+                          Stellar spin off: where knowledge meets creativity in the cosmos
+                        </p>
+                        <p><a href="https://unstop.com/competitions/stellar-spin-off-anhad24-iit-jammu-898242">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6" class="Technical" id="Cultural">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Technical_event/mockstock.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Mockstock 3.0</a>
+                        </h4>
+                        <p class="mb-30">
+                          Master the Market: where Stragey meets sucess!
+                        </p>
+                        <p><a href="https://unstop.com/competitions/mockstock-20-anhad24-iit-jammu-893957">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6" class="Cultural" id="Cultural">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Cultural_event/flexfury.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Flex Fury</a>
+                        </h4>
+                        <p class="mb-30">
+                          Arm Wrestling, Body Building, and more
+                        </p>
+                        <p><a href="https://unstop.com/events/flex-fury-anhad24-iit-jammu-870769">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6" class="Cultural" id="Cultural">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Cultural_event/big.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                      <h4 class="ms-genres-title">
+                          <a>Big Boss</a>
+                        </h4>
+                        <p class="mb-30">
+                          Clash of Character
+                        </p>
+                        <p><a href="https://unstop.com/events/big-boss-anhad24-iit-jammu-871075">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6" id="Cultural" class="Cultural">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Cultural_event/runway.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Runway Reverie</a>
+                        </h4>
+                        <p class="mb-30">
+                         The Unlimited Fashion Shutdown
+                        </p>
+                        <p><a href="https://unstop.com/events/runway-reverie-anhad24-iit-jammu-861980">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6" class="Cultural">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Cultural_event/Art.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Art Aria</a>
+                        </h4>
+                        <p class="mb-30">
+                 T-Shirt Painiting
+                        </p>
+                        <p><a href="https://unstop.com/events/art-aria-anhad-24-iit-jammu-868347">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6" class="Cultural">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Cultural_event/open.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Open Mic</a>
+                        </h4>
+                        <p class="mb-30">
+                          Speaking Art
+                        </p>
+                        <p><a href="https://unstop.com/events/openmic-anhad-24-iit-jammu-860807">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6" class="Cultural">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Cultural_event/pentathalon.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>pentathalon</a>
+                        </h4>
+                        <p class="mb-30">
+                          Marathon of Events
+                        </p>
+                        <p><a href="https://unstop.com/events/pentathlon-anhad-24-iit-jammu-858773">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6" class="Technical">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Technical_event/cad.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>CAD Star 4.0</a>
+                        </h4>
+                        <p class="mb-30">
+                          Designing Tomorrow, Today: A CAD Odyssey
+                        </p>
+                        <p><a href="https://unstop.com/competitions/cadstar-40-anhad24-iit-jammu-868839">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6" class="Technical">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Technical_event/bridge.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Bridge-A-Thon 2.0</a>
+                        </h4>
+                        <p class="mb-30">
+                          Bridging innovation, connecting horizons
+                        </p>
+                        <p><a href="https://unstop.com/events/bridge-a-thon-20-anhad24-iit-jammu-868781">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6" class="Technical">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Technical_event/Algobash.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative" >
+                        <h4 class="ms-genres-title">
+                          <a>Algobash 2.0 </a>
+                        </h4>
+                        <p class="mb-30">
+                          Algo-Bash 2.0: Reverse, Blind, and Twist Your Way to Glory
+                        </p>
+                        <p><a href="https://unstop.com/hackathons/algobash-20-anhad-24-iit-jammu-868764">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-xl-6" class="Technical">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Technical_event/cipher.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Operation Cipher Shadows</a>
+                        </h4>
+                        <p class="mb-30">
+                          Gotta, Catch them all
+                        </p>
+                        <p><a href="https://unstop.com/hackathons/operation-cipher-shadows-the-q-initiative-anhad24-iit-jammu-897972">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6" id="Technical">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Technical_event/cryptpo.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Cryptotradex</a>
+                        </h4>
+                        <p class="mb-30">
+                          MockStock: Practice, Learn, Master the Market - Where Virtual Trading Meets Real Success!
+                        </p>
+                        <p><a href="https://unstop.com/competitions/cryptotradex-anhad-24-iit-jammu-869549">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6" id="Technical">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Technical_event/Rc.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>PowerPulse RC Race</a>
+                        </h4>
+                        <p class="mb-30">
+                          Zoooooom to Victory: Where Precision Meets Adrenaline!
+                        </p>
+                        <p><a href="https://unstop.com/competitions/powerpulse-rc-race-anhad24-iit-jammu-869782">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6" id="Technical">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Technical_event/amnesia.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Amnesia 3.0</a>
+                        </h4>
+                        <p class="mb-30">
+                          Finance Quotient Unleashed: Navigate the Numbers in Two Rounds
+                        </p>
+                        <p><a href="https://unstop.com/competitions/amnesia-30-anhad24-iit-jammu-884323">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6" id="Technical">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Technical_event/line.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Line Follower Robot</a>
+                        </h4>
+                        <p class="mb-30">
+                          Follow, Speed, Succeed!
+                        </p>
+                        <p><a href="https://unstop.com/competitions/line-follower-robot-anhad24-iit-jammu-870596">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-6" id="Technical">
+                    <div class="ms-genres-item ms-genres-flex mb-25">
+                      <div
+                        class="ms-genres-img ms-br-15 fix w-img genres-img-214"
+                      >
+                        <a>
+                          <img
+                            src="assets/img/Technical_event/int.jpg"
+                            alt="genres img"
+                          />
+                        </a>
+                      </div>
+                      <div class="ms-genres-content p-relative">
+                        <h4 class="ms-genres-title">
+                          <a>Int Maestro</a>
+                        </h4>
+                        <p class="mb-30">
+                          Sparking the light of Math Wizardry
+                        </p>
+                        <p><a href="https://unstop.com/competitions/int-maestro-anhad-24-iit-jammu-868733">Register Now</a></p>
+                      </div>
+                    </div>
+                  </div> 
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        
+        <!-- Partner Area Start Here  -->
+        <div class="ms-partner-area fix pt-130 pb-130">
+          <div class="container">
+            <div class="swiper-container ms-partner-active">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/partner/partner-01.png"
+                    alt="partner image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/partner/partner-02.png"
+                    alt="partner image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/partner/partner-03.png"
+                    alt="partner image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/partner/partner-04.png"
+                    alt="partner image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/partner/partner-05.png"
+                    alt="partner image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/partner/partner-04.png"
+                    alt="partner image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/partner/partner-01.png"
+                    alt="partner image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/partner/partner-02.png"
+                    alt="partner image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/partner/partner-03.png"
+                    alt="partner image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/partner/partner-04.png"
+                    alt="partner image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/partner/partner-05.png"
+                    alt="partner image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/partner/partner-04.png"
+                    alt="partner image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Partner Area End Here  -->
+      </main>
+
+      <!-- Footer Area Start Here  -->
+      <section class="footer">
+        <div class="foot">
+          <div class="NAC">
+            <div class="footcontent">
+            <p><b>Anhad</b></p>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="genres.html">Events</a></p>
+            <p><a href="team.html">Team</a></p> 
+          </div>
+          </div>
+          <div class="link">
+            <div class="footcontent">
+            <p><b>Developed By:</b></p>
+            <p class="socl">Vishal Kumar
+            <a href="https://www.instagram.com/vishu_9354?igsh=Y3Y5dWdyNWdodWdp">Instagram</a>
+            <a href="https://github.com/Vishu9354">Github</a>
+            <a href="https://www.linkedin.com/in/vishal-kumar-17aa78257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkdin</a>
+            </p>
+            <p class="socl">Abhay Singh
+            <a href="https://www.instagram.com/_singh_abhay__/">Instagram</a>
+            <a href="https://github.com/AbhaySingh502">Github</a>
+            <a href="https://www.linkedin.com/in/abhay-singh-4a8286254/">Linkdin</a>
+            </p>
+          </div>
+          </div>
+          <div class="contact">
+            <div class="footcontent">
+            <p><b>Contact Us</b></p>
+            <p>Phone:-</p>
+            <p>mail:</p>
+  </div>          
+          </div>
+        </div>
+      </section>
+      <!-- Footer Area End Here  -->
+    </div>
+
+    <!-- Back to top start -->
+    <div class="progress-wrap">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <!-- Back to top end -->
+
+    <!-- JS here -->
+    <script src="assets/app/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/app/js/waypoints.min.js"></script>
+    <script src="assets/app/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/app/js/nice-select.min.js"></script>
+    <script src="assets/app/js/meanmenu.min.js"></script>
+    <script src="assets/app/js/swiper-bundle.min.js"></script>
+    <script src="assets/app/js/slick.min.js"></script>
+    <script src="assets/app/js/magnific-popup.min.js"></script>
+    <script src="assets/app/js/backtotop.js"></script>
+    <script src="assets/app/js/ajax-form.js"></script>
+    <script src="assets/app/js/jquery-ui.min.js"></script>
+    <script src="assets/app/js/gsap.min.js"></script>
+    <script src="assets/app/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/app/js/SplitText.min.js"></script>
+    <script src="assets/app/js/ScrollTrigger.min.js"></script>
+    <script src="assets/app/js/jquery.jplayer.min.js"></script>
+    <script src="assets/app/js/jplayer.playlist.js"></script>
+    <script src="assets/app/js/settings.js"></script>
+    <script src="assets/app/js/main.js"></script>
+    <script src="assets/app/js/select.js"></script>
+  </body>
+</html>
